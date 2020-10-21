@@ -1,0 +1,33 @@
+@import 'assets/styles/vars';
+
+.root {
+    .list {
+        border: 1px solid rgba(255,255,255,.1);
+        border-radius: 5px;
+        padding: 0;
+        list-style: none;
+
+        .listItem {
+            background-color: $bg-grey;
+            padding: 5px 10px;
+
+            a {
+                color: white;
+                display: block;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+            &:hover {
+                background-color: #414141;
+            }
+            
+            &:not(:last-child) {
+                border-bottom: 1px solid rgba(255,255,255,.1);
+            }
+        }
+    }
+
+    
+}

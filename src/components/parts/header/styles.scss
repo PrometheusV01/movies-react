@@ -1,0 +1,37 @@
+@import 'assets/styles/vars';
+
+.root {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+
+    .logo {
+        color: white;
+        font-size: 1.25rem;
+    }
+
+    .nav {
+        display: flex;
+
+        .navItem {
+            margin: 0 10px;
+            color: white;
+
+            &.active, &:hover {
+                color: $violet;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 1px;
+                    left: 0;
+                    right: 0;
+                    height: 1px;
+                    background-color: $violet;
+                }
+            }
+        }
+    }
+}

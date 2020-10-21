@@ -1,3 +1,13 @@
+import { routerMiddleware as createRouterMiddleware } from 'connected-react-router';
+import { history } from './../history';
 import createSagaMiddleware from 'redux-saga';
 
-export const sagaMiddleware = createSagaMiddleware();
+const routerMiddleware = createRouterMiddleware(history);
+const sagaMiddleware = createSagaMiddleware();
+
+const middleware = [
+    routerMiddleware,
+    sagaMiddleware
+].filter((o) => o);
+
+export { middleware, sagaMiddleware };

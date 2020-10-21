@@ -3,6 +3,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { ConnectedRouter } from 'connected-react-router';
 import { Provider } from 'react-redux';
+import Routes from './routes';
 
 //Instruments
 import store from 'init/store';
@@ -17,7 +18,7 @@ const root = document.getElementById('root');
 render(
     <Provider store = { store }>
         <ConnectedRouter history = { history }>
-            <div>Hello</div>
+            <Routes />
         </ConnectedRouter>
     </Provider>,
     root

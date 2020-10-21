@@ -1,3 +1,22 @@
-body {
-    background: #2a2828;
+:global {
+    body {
+        background-color:  #2a2828;
+        font-family: 'Arial', sans-serif;
+        font-size: 15px;
+        color: white;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .page-title {
+        text-align: center;
+        padding: 35px;
+    } 
 }

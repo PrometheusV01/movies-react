@@ -35,8 +35,8 @@ export const generateDevelopmentConfiguration = () => {
                 useLocalIp:         true,
                 proxy:              [
                     {
-                        context:      ['/api', '/files', '/public'],
-                        target:       'http://new.moituristy.dev07.odev.io',
+                        context:      ['/api'],
+                        target:       'http://localhost:3000',
                         changeOrigin: true,
                     }
                 ],

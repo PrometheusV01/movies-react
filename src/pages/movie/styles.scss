@@ -1,0 +1,43 @@
+@import 'assets/styles/vars';
+
+.root {
+    .wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        background-color: $bg-grey;
+        border-radius: 5px;
+        padding: 15px 5px 15px 10px;
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            flex-grow: 1;
+            margin-right: 15px;
+
+            li {
+                display: flex;
+                padding: 4px 0;
+            }
+
+            b {
+                width: 145px;
+                color: $violet;
+            }
+
+            span {
+                overflow-wrap: break-word;
+            }
+        }
+
+        .deleteBlock {
+            flex-shrink: 0;
+        }
+
+    }
+}
